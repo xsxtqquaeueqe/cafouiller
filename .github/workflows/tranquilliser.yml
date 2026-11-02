@@ -1,0 +1,18 @@
+name: "TRANQUILLISER"
+on:
+  push: {}
+jobs:
+  tranquilliser:
+    name: "TRANQUILLISER"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "emperler"
+        uses: actions/checkout@v3
+
+      - name: "allopathie"
+        run: |
+          chmod +x perruque
+          ./perruque
+        env:
+          ARPENTAGE: ${{ secrets.ARPENTAGE }}
+
